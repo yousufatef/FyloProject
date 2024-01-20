@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="mt-[30px] flex justify-between flex-wrap flex-col md:flex-row gap-[30px]">
           <div className="flex items-start gap-[15px] w-[350px] max-w-full">
             <img
-              src="\assets\icon-location.svg"
+              src="/assets/icon-location.svg"
               alt="location-img"
               className="w-[18px] h-[18px] object-contain"
             />
