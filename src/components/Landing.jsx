@@ -1,11 +1,11 @@
 const Landing = () => {
   return (
-    <section className="bg-[#1c2230]">
+    <section className="bg-[#1c2230] py-0 pt-[200px]">
       <div className="container">
-        <div className="element-center flex-col pt-[200px]">
+        <div className="element-center flex-col">
           <div className="w-[750px] max-w-full">
             <img
-              src="src/assets/illustration-intro.png"
+              src="/assets/illustration-intro.png"
               alt="Landing-img"
               className="w-full h-fit"
             />
@@ -31,7 +31,11 @@ const Landing = () => {
         </div>
       </div>
       <div className="w-full h-[200px]">
-        <img src="src/assets/bg-curvy-desktop.svg" alt="Wave-img" className="w-full h-full"/>
+        <img
+          src="/assets/bg-curvy-desktop.svg"
+          alt="Wave-img"
+          className="w-full h-full"
+        />
       </div>
     </section>
   );

@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
-    const headerRef = useRef()
-    useEffect(()=>{
-        window.addEventListener("scroll", ()=>{
-            if(window.scrollY > 100){
-                headerRef.current.style.background = "#0c1524"
-                headerRef.current.style.padding = "20px 0"
-            }else{
-                 headerRef.current.style.background = "transparent";
-                 headerRef.current.style.padding = "60px 0";
-            }
-        })
-    })
-    const [links] = useState([
+  const headerRef = useRef();
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        headerRef.current.style.background = "#0c1524";
+        headerRef.current.style.padding = "20px 0";
+      } else {
+        headerRef.current.style.background = "transparent";
+        headerRef.current.style.padding = "60px 0";
+      }
+    });
+  });
+  const [links] = useState([
     { name: "Features", path: "/features" },
     { name: "Team", path: "/team" },
     { name: "Sign In", path: "/sign-in" },
@@ -25,7 +25,11 @@ const Header = () => {
     >
       <div className="container flex justify-between items-center gap-[30px] sm:gap-0 flex-col sm:flex-row">
         <a href="#">
-          <img src="/src/assets/logo.svg" alt="Logo-img" />
+          <img
+            src="/assets/logo.svg "
+            alt="Logo-img"
+            className="aspect-[2/1] max-w-[200px]"
+          />
         </a>
         <nav>
           <ul className="flex item-center gap-7">

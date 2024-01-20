@@ -29,10 +29,10 @@ const Testimonies = () => {
     },
   ]);
   return (
-    <section className="pb-[350px]">
+    <section>
       <div className="container relative">
         <div className="absolute left-[20px] top-[-35px]">
-          <img src="src/assets/bg-quotes.png" alt="quotes-img" />
+          <img src="/assets/bg-quotes.png" alt="quotes-img" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] relative z-10">
           {testData.map((person) => (

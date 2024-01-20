@@ -8,7 +8,7 @@ const TestimonialBox = ({ name, position, description, image }) => {
       </p>
       <div className="flex">
         <img
-          src={`src/assets/${image}`}
+          src={`/assets/${image}`}
           alt="person-img"
           className="w-[50px] h-[50px] rounded-full object-contain"
         />

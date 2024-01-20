@@ -16,28 +16,30 @@ const Footer = () => {
   ]);
   const [socialIcons] = useState(["facebook", "twitter", "instagram"]);
   return (
-    <section className="bg-[#0c1524] text-white">
-      <div className="container pt-[320px] md:pt-[220px] pb-[100px]">
-        <a href="/">
-          <img
-            src="/assets/logo.svg"
-            alt="Logo-img"
-            className="w-[175px] h-[60px] object-contain"
-          />
-        </a>
-        <div className="mt-[30px] flex justify-between flex-wrap flex-col md:flex-row gap-[30px]">
-          <div className="flex items-start gap-[15px] w-[350px] max-w-full">
-            <img
-              src="/assets/icon-location.svg"
-              alt="location-img"
-              className="w-[18px] h-[18px] object-contain"
-            />
-            <p className="font-normal text-sm tracking-[0.8px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              iure qui, maxime mollitia a provident pariatur sed aliquam
-              eligendi impedit quia consectetur ab esse? Voluptas officia culpa
-              reprehenderit quo sed?
-            </p>
+    <footer className="bg-[#0c1524] text-white">
+      <div className="container py-10 pt-[300px]">
+        <div className="mt-[30px] flex justify-between items-center flex-wrap flex-col md:flex-row gap-[30px]">
+          <div className="">
+            <a href="/">
+              <img
+                src="/assets/logo.svg"
+                alt="Logo-img"
+                className="w-[175px] h-[60px] object-contain aspect-[2/1] max-w-[200px] m-auto"
+              />
+            </a>
+            <div className="flex items-start gap-[15px] w-[350px] max-w-full py-10">
+              <img
+                src="/assets/icon-location.svg"
+                alt="location-img"
+                className="w-[18px] h-[18px] object-contain"
+              />
+              <p className="font-normal text-sm tracking-[0.8px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae iure qui, maxime mollitia a provident pariatur sed
+                aliquam eligendi impedit quia consectetur ab esse? Voluptas
+                officia culpa reprehenderit quo sed?
+              </p>
+            </div>
           </div>
           <div>
             {contact.map((item) => (
@@ -46,7 +48,7 @@ const Footer = () => {
                 className="flex items-center gap-[15px] mb-[15px] last-of-type:mb-0"
               >
                 <img
-                  src={`/src/assets/${item.icon}`}
+                  src={`/assets/${item.icon}`}
                   alt="icon"
                   className="w-[18px] h-[18px] object-contain"
                 />
@@ -87,7 +89,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

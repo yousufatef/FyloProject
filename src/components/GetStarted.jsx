@@ -1,6 +1,6 @@
 const GetStarted = () => {
   return (
-    <section>
+    <section className="-mb-40">
       <div className="container">
         <div className="relative">
           <div className="absolute left-[50%] translate-x-[-50%] top-[-150px] bg-[#1c2230] rounded-[5px] p-[30px] text-white text-center element-center flex-col w-[865px] max-w-full min-h-[275px]">
