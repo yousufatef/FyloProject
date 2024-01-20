@@ -4,7 +4,7 @@ const StayProductive = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center text-white">
         <div>
           <img
-            src="..\assets\illustration-stay-productive.png"
+            src="/assets/illustration-stay-productive.png"
             alt="StayProductive-img"
           />
         </div>
@@ -32,7 +32,7 @@ const StayProductive = () => {
           >
             See your flow projects
             <img
-              src="\assets\icon-arrow.svg"
+              src="/assets/icon-arrow.svg"
               alt="arrow-img"
               className="w-[20px] h-[20px] object-contain animate-[moveRight_1s_ease-in-out_infinite]"
             />
